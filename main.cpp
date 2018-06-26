@@ -158,6 +158,16 @@ void keyboardFunc( unsigned char key, int x, int y)
 
 			}
 			break;
+		case 'q': // reset
+			zoom -= zoom;
+			horizontalCam -= horizontalCam;
+			verticalCam -= verticalCam;
+			angleX -= angleX;
+			angleY -= angleY;
+			moveX -= moveX;
+			moveY -= moveY;
+			angle -= angle;
+			break;
         default:
             cout << "Unhandled key press " << key << "." << endl;
     }
